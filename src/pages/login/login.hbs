@@ -1,0 +1,11 @@
+<div class="login_form">
+    {{> title text='Вход'}}
+    <form>
+        {{> input class='login_input' label='Логин' labelClass="login_input__label" name='login' type='text' fieldClass="login_input__field"}}
+        {{> input class='login_input' label='Пароль' labelClass="login_input__label" name='password' type='password' fieldClass="login_input__field"}}
+        <div class="login_form__buttons">
+            {{> button class ='login_form__button' name='Авторизоваться' onclick="location.href='/chats'"}}
+            {{> link class ='login_form__link' text='Нет аккаунта?' href='/registration'}}
+        </div>
+    </form>
+</div>

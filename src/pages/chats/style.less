@@ -1,0 +1,122 @@
+.chats_layout {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+}
+
+.chats_list {
+    display: flex;
+    flex-direction: column;
+    background-color: #FBFBFB;
+    width: 310px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.chats_content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    margin: 0 20px;
+    position: relative;
+}
+
+.chats_profile {
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.chats_profile__link {
+    color: #999;
+    size: 12px;
+    line-height: 12px;
+    margin-top: 21px;
+    margin-right: 22px;
+}
+
+.chats_search {
+    width: 290px;
+    height: 32px;
+    background-color: #EFEFEF;
+    margin-bottom: 14px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+}
+
+.chats_search::-webkit-input-placeholder {
+    text-align: center;
+}
+
+.chats_separator{
+    background-color: #EAEAEA;
+    height: 1px;
+}
+
+.chats_content__header {
+    width: 100%;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.chats_content__photo {
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.chats_content__name {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 13px;
+}
+
+.chats_content__list {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    padding: 10px 0;
+}
+
+.chats_content__footer {
+    width: 100%;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    bottom: 0;
+}
+
+.chats_textarea {
+    height: 32px;
+    background-color: #EFEFEF;
+    margin: 11px 10px;
+    border: none;
+    border-radius: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    width: inherit;
+}
+
+.chats_content__file_button {
+    background: url(src/static/clip.svg);
+    border: none;
+    height: 32px;
+    width: 32px;
+    padding: 16px;
+}
+
+.chats_content__send_button {
+    background: url(src/static/arrowRight.svg);
+    border: none;
+    height: 28px;
+    width: 28px;
+    padding: 14px;
+}
