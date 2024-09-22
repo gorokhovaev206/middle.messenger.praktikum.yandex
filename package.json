@@ -15,5 +15,9 @@
   },
   "dependencies": {
     "vite-plugin-handlebars": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=v18.13.0",
+    "npm": ">=9.3.1"
   }
 }
