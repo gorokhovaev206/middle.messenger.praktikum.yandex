@@ -1,0 +1,28 @@
+<div class="chats_layout">
+    <div class="chats_list">
+        <div class="chats_profile">
+            {{> link class ='chats_profile__link' text='Профиль >' page='profile'}}
+        </div>
+        <input class="chats_search" placeholder="Поиск"/>
+        <div class="chats_separator"></div>
+        <div>
+            {{> chatItem name='Лена' lastText='Привет!' lastDate='11:20' cnt='1'}}
+        </div>
+    </div>
+    <div class="chats_content">
+        <div class="chats_content__header">
+            {{> image class='chats_content__photo' src=defaultPhoto altText="Аватар"  height="34" width="34"}}
+            <label class="chats_content__name">Лена</label>
+        </div>
+        <div class="chats_separator"></div>
+        <div class="chats_content__list">
+            {{> chatMsg text='Привет!' date='11:20' cnt='1'}}
+        </div>
+        <div class="chats_separator"></div>
+        <div class="chats_content__footer">
+            {{> button class="chats_content__file_button"}}
+            <input class="chats_textarea" placeholder="Сообщение" name="message"/>
+            {{> button class="chats_content__send_button"}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="registration_form">
+    {{> title text='Регистрация'}}
+    <form>
+        {{> input class='registration_input' label='Почта' labelClass="registration_input__label" name='email' type='email' fieldClass="registration_input__field"}}
+        {{> input class='registration_input' label='Логин' labelClass="registration_input__label" name='login' type='text' fieldClass="registration_input__field"}}
+        {{> input class='registration_input' label='Имя' labelClass="registration_input__label" name='first_name' type='text' fieldClass="registration_input__field"}}
+        {{> input class='registration_input' label='Фамилия' labelClass="registration_input__label" name='second_name' type='text' fieldClass="registration_input__field"}}
+        {{> input class='registration_input' label='Телефон' labelClass="registration_input__label" name='phone' type='tel' fieldClass="registration_input__field"}}
+        {{> input class='registration_input' label='Пароль' labelClass="registration_input__label" name='password' type='password' fieldClass="registration_input__field"}}
+        {{> input class='registration_input' label='Пароль(еще раз)' labelClass="registration_input__label" name='repeated_password' type='password' fieldClass="registration_input__field"}}
+        <div class="registration_form_buttons">
+            {{> button class="registration_form__button" name='Зарегистрироваться' page='chats'}}
+            {{> link class="registration_form__link" text='Войти' page='500'}}
+        </div>
+    </form>
+</div>

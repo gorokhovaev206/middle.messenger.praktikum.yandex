@@ -1,0 +1,43 @@
+<div class="profile_layout">
+    <div class="profile_sidezone">
+        <a page='chats'>
+            {{> image class='profile_icon__back' src=arrowBack altText="Назад"  height="28" width="28"}}
+        </a>
+    </div>
+    <div class="profile_content">
+        <form class="profile_content__form">
+            {{> image class='profile_photo' src=defaultPhoto altText="Аватар"  name='avatar' height="130" width="130"}}
+            <label class="profile_name">Лена</label>
+            {{> input class='profile_input' label='Почта' labelClass="profile_input__label" name='email' type='email' fieldClass="profile_input__field" value="lena@gmail.com" disabled=true}}
+            <div class="profile_input__separator"></div>
+            {{> input class='profile_input' label='Логин' labelClass="profile_input__label" name='login' type='text' fieldClass="profile_input__field" value="lena" disabled=true}}
+            <div class="profile_input__separator"></div>
+            {{> input class='profile_input' label='Имя' labelClass="profile_input__label" name='first_name' type='text' fieldClass="profile_input__field" value="Лена" disabled=true}}
+            <div class="profile_input__separator"></div>
+            {{> input class='profile_input' label='Фамилия' labelClass="profile_input__label" name='second_name' type='text' fieldClass="profile_input__field" value="Кузнецова" disabled=true}}
+            <div class="profile_input__separator"></div>
+            {{> input class='profile_input' label='Имя в чате' labelClass="profile_input__label" name='display_name' type='text' fieldClass="profile_input__field" value="Лена" disabled=true}}
+            <div class="profile_input__separator"></div>
+            {{> input class='profile_input' label='Телефон' labelClass="profile_input__label" name='phone' type='tel' fieldClass="profile_input__field" value="+7(917)0000000" disabled=true}}
+            <div class="profile_input__separator"></div>
+
+            <div class="profile_content__pass_block">
+                {{> input class='profile_input' label='Старый пароль' labelClass="profile_input__label" name='second_name' type='password' fieldClass="profile_input__field" value="" disabled=false}}
+                <div class="profile_input__separator"></div>
+                {{> input class='profile_input' label='Новый пароль' labelClass="profile_input__label" name='chatName' type='password' fieldClass="profile_input__field" value="" disabled=false}}
+                <div class="profile_input__separator"></div>
+                {{> input class='profile_input' label='Повторите новый пароль' labelClass="profile_input__label" name='phone' type='password' fieldClass="profile_input__field" value="" disabled=false}}
+                <div class="profile_input__separator"></div>
+            </div>
+
+
+            <div class="profile_buttons">
+                {{> button class="profile_button__edit" name='Изменить данные'}}
+                <div class="profile_input__separator"></div>
+                {{> button class="profile_button__edit" name='Изменить пароль'}}
+                <div class="profile_input__separator"></div>
+                {{> button class="profile_button__exit" name='Выйти'}}
+            </div>
+        </form>
+    </div>
+</div>
