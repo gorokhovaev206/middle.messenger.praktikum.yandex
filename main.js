@@ -11,46 +11,37 @@ navigate(login);
 document.addEventListener('click', (e) => {
   const page = e.target.getAttribute('page');
 
-  if (page) {
-    navigate(page);
-
-    e.preventDefault();
-    e.stopImmediatePropagation();
-  }
-});
-
-document.addEventListener('DOMContentLoaded', (e) => {
-  const path = e.target.location.pathname;
-
-  switch (path) {
-    case '/login': {
+  switch (page) {
+    case 'login': {
       navigate(login);
       break;
     }
-    case '/registration': {
+    case 'registration': {
       navigate(registration);
       break;
     }
-    case '/chats': {
+    case 'chats': {
       navigate(chats);
       break;
     }
-    case '/profile': {
+    case 'profile': {
       navigate(profile);
       break;
     }
-    case '/404': {
+    case '404': {
       navigate(notFound);
       break;
     }
-    case '/500': {
+    case '500': {
       navigate(error);
       break;
     }
-
-    default: {
-      window.location.pathname = '/login';
-    }
   }
+  e.preventDefault();
+  e.stopImmediatePropagation();
 
+});
+
+document.addEventListener('DOMContentLoaded', (e) => {
+  navigate(login);
 });
